@@ -41,14 +41,14 @@ In the project directory, you can run:
 
 ## Install dependencies:
 
-npm install
+### `npm install`
 
 ## Cloudinary Setup
 
-CLOUD_NAME=your_cloud_name
-API_KEY=your_api_key
-API_SECRET=your_api_secret
+### `CLOUD_NAME=your_cloud_name`
+### `API_KEY=your_api_key`
+### `API_SECRET=your_api_secret`
 
 ## Start the development server
 
-node src/server.js
+### `node src/server.js`
