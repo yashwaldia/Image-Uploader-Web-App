@@ -2,22 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const UploadedImage = ({ imageUrl, onBack }) => {
-  const [viewCount, setViewCount] = useState(0);
-
-  useEffect(() => {
-    trackImageView();
-  }, [imageUrl]);
-
-  // Function to send a request to the backend to track image views
-  const trackImageView = async () => {
-    try {
-      const response = await axios.post('http://localhost:5000/view-image', { imageUrl });
-      setViewCount(response.data.views);
-    } catch (error) {
-      console.error('Error tracking image views:', error);
-    }
-  };
-
+  
   const handleCopyLink = () => {
     navigator.clipboard.writeText(imageUrl);
   };
@@ -44,9 +29,7 @@ const UploadedImage = ({ imageUrl, onBack }) => {
         <button type="button" onClick={onBack} className="button button__hover">Back</button>
       </div>
 
-      <div>
-        <p>Views: {viewCount}</p>
-      </div>
+
     </div>
   );
 };

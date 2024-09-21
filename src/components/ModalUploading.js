@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/ModalUploading.css'; // Import your styles
+import '../styles/components/ModalUploading.css';
 
 const ModalUploading = ({ progress }) => {
   return (

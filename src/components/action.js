@@ -5,10 +5,10 @@ export const setImages = (images) => ({
 
 export const fetchImages = () => {
   return (dispatch) => {
-    fetch('http://localhost:5000/images') // API to fetch images
+    fetch('http://localhost:5000/images') 
       .then((response) => response.json())
       .then((images) => {
-        dispatch(setImages(images)); // Dispatch the action to store images in Redux
+        dispatch(setImages(images)); 
       })
       .catch((error) => console.error('Error fetching images:', error));
   };

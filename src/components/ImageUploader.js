@@ -7,7 +7,7 @@ const ImageUploader = () => {
   const [uploadedImage, setUploadedImage] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState(false);
-  const [uploadProgress, setUploadProgress] = useState(0); // Track upload progress
+  const [uploadProgress, setUploadProgress] = useState(0); 
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
